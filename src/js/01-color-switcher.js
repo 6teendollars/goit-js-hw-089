@@ -15,7 +15,6 @@ function start() {
   intervalId = setInterval(() => {
     document.body.style.background = getRandomHexColor();
   }, 1000);
-
   startButton.disabled = true;
 }
 function stop() {
