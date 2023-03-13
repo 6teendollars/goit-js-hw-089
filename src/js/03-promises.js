@@ -27,9 +27,9 @@ const refs = {
 
 refs.form.addEventListener('submit', evt => {
   evt.preventDefault();
-  const delay = refs.delayInp.value;
-  const step = refs.stepInp.value;
-  const amount = refs.amountInp.value;
+  const delay = Number(refs.delayInp.value);
+  const step = Number(refs.stepInp.value);
+  const amount = Number(refs.amountInp.value);
   let currentDelay = delay;
   for (let i = 1; i <= amount; i += 1) {
     const promise = createPromise(i, currentDelay);
